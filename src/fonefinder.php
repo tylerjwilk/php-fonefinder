@@ -7,11 +7,6 @@
 #                  This is very rudimentary and will only catch the major cases/carriers. If you are looking for 100% reliably you are in the wrong place.
 #/doc
 
-/*
-    fonefinder provider links - http://www.fonefinder.net/findome.php?npa=&nxx=553&usaquerytype=Search+by+Number
-    list of sms gateways - http://en.wikipedia.org/wiki/List_of_SMS_gateways
-*/
-
 class FoneFinder
 {
 
