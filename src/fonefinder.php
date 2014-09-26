@@ -63,6 +63,13 @@ class FoneFinder
             "<A HREF='http://fonefinder.net/att.php'>"      => 'att',
             "<A HREF='http://fonefinder.net/qwest.php'>"    => 'qwest',
             "<A HREF='http://fonefinder.net/sprint.php'>"   => 'sprint',
+            "<A HREF='http://fonefinder.net/tmobile.php>"   => 'tmobile',
+            "<A HREF='http://fonefinder.net/alltel.php'>"   => 'alltel',
+            "<A HREF='http://fonefinder.net/boostmobile.php'>"   => 'boost',
+            "<A HREF='hhttp://fonefinder.net/cricket.php'>"   => 'cricket',
+            "<A HREF='http://fonefinder.net/metropcs.php'>"   => 'metropcs',
+
+
         );            
         return $fingerprints;
     }
@@ -79,6 +86,11 @@ class FoneFinder
             'att'     => 'txt.att.net',
             'qwest'   => 'qwestmp.com',
             'sprint'  => 'messaging.sprintpcs.com',
+            'tmobile'  => 'tmomail.net',
+            'alltel' => 'message.alltel.com',
+            'boost' => 'myboostmobile.com',
+            'cricket' => 'sms.mycricket.com',
+            'metropcs' => 'mymetropcs.com',
         );
         return $gateways[$carrier];
     }
