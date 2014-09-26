@@ -94,6 +94,21 @@ class FoneFinder
         );
         return $gateways[$carrier];
     }
+
+    /*
+     *  Splits the string, assumption is that it's a 10 digit number
+     */
+    function splitNumber($phone)
+    {
+        $phone = preg_replace("~[^0-9]~", "", $phone);
+        $components = array
+        (
+            'npa' => substr($phone,0,3),
+            'nxx' => substr($phone,2,3),
+            'thoublock' => substr($phone, 5, 4),
+        );
+        return $components;
+    }
     
 }
 
