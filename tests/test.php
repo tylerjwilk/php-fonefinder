@@ -24,3 +24,6 @@ Array
 )
 */
 
+$split = $fonefinder->splitNumber('555-555-5555');
+print_r($split);
+
