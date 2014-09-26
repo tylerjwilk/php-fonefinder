@@ -96,14 +96,6 @@ class FoneFinder
     }
 
     /*
-     * I was going to right a validator using regex, but
-     */
-    function validate($npa, $nxx, $thoublock)
-    {
-        return ((sizeof($npa)) == 3 && (sizeof($nxx)) == 3 && (sizeof($thoublock)) == 4) ? true : false;
-    }
-
-    /*
      *  Splits the string, assumption is that it's a 10 digit number
      */
     function splitNumber($phone)
